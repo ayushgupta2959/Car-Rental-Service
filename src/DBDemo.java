@@ -14,7 +14,7 @@ public class DBDemo {
     Connection connection = DriverManager.getConnection
       ("jdbc:mysql://localhost/carService", "root", "home");
 
-      PreparedStatement stmt=connection.prepareStatement("select * from Students");
+      PreparedStatement stmt=connection.prepareStatement("select * from Driver");
       ResultSet rs = stmt.executeQuery();
       while(rs.next()){  
       System.out.println(rs.getInt(1)+" "+rs.getString(2));  
